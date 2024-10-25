@@ -1,0 +1,6 @@
+services:
+  rng-api:
+    image: labs/rng-api:${RELEASE:-21.05}
+
+  rng-web:
+    image: labs/rng-web:${RELEASE:-21.05}

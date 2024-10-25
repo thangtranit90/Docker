@@ -1,0 +1,30 @@
+services:
+  rng-api:
+    image: labs/rng-api:21.05
+    environment:
+      - Rng__FailAfter__Enabled=true
+      - Rng__FailAfter__CallCount=10
+      - Rng__FailAfter__Action=Exit
+    restart: always
+    scale: 3
+    cpus: 4
+    mem_limit: 8g
+    networks:
+      - app-net
+
+  rng-web:
+    image: labs/rng-web:21.05
+    environment:
+      - Logging__LogLevel__Default=Debug
+      - RngApi__Url=http://rng-api/rng
+    restart: always    
+    scale: 1
+    cpus: 32
+    mem_limit: 64g
+    ports:
+      - "8088:80"
+    networks:
+      - app-net
+
+networks:
+  app-net:

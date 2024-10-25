@@ -1,0 +1,6 @@
+services:
+  rng-api:
+    image: labs/rng-api:21.05-linux-amd64
+
+  rng-web:
+    image: labs/rng-web:21.05-linux-amd64

@@ -1,0 +1,86 @@
+html { 
+	min-height:100%
+}
+ 
+* {
+	margin:0;padding:0
+}
+ 
+body { 
+ 	background-color:#585650;background-repeat:repeat-x;color:#444;
+ 	font-family: Pragmata, Menlo, 'DejaVu LGC Sans Mono', 'DejaVu Sans Mono', Consolas, 'Everson Mono', 'Lucida Console', 'Andale Mono', 'Nimbus Mono L', 'Liberation Mono', FreeMono, 'Osaka Monospaced', Courier, 'New Courier', monospace;
+}
+
+.null{
+}
+ 
+p, code, ul {
+  	padding-bottom:1.2em
+}
+ 
+li { 
+	list-style:none
+}
+
+.clearer { 
+	clear:both;font-size:0
+}
+
+.inner-container { 
+	border:2px solid #D7D7D2;background:#FFF;font-size:1.2em;margin:0 auto;padding:10px;width:780px
+}
+.outer-container { 
+	padding-bottom:64px
+}
+
+.header { 
+	background:#680d20;height:160px;margin-bottom:5px;text-align:center
+}
+ 
+.header .title { 
+	color:#FFF;position:relative
+}
+
+.header .title .sitename { 
+	color:#FFF;font:normal 3em;padding-bottom:2px;text-decoration:none;position:absolute;left:10px;top:112px;z-index:101
+}
+ 
+.header .title .sitenameshadow { 
+	color:#000;opacity:.25;filter:alpha(opacity=25);font:normal 3em;padding-bottom:2px;text-decoration:none;position:absolute;left:13px;top:115px;z-index:100
+}
+		
+.header .title .slogan{ 
+	font:normal 1.1em;padding-top:6px;position:absolute;left:230px;top:130px
+}
+
+.main { 
+	background: border-top:4px solid #FFF;padding:8px 12px 0 0
+}
+
+.path { 
+	background:#16294a;color:#FFFFF;font:normal 1.1em;padding:0px 9px 0px 9px;height:35px
+}
+
+.path .left { 
+	float:left;padding:9px 0px 0px 0px
+}
+
+.right { 
+	float:right;padding:0px 10px 0px 0px
+}
+
+.right a:hover {  
+	text-decoration: none; 
+}
+
+a:link { text-decoration: none; color:#FFF }
+a:visited { text-decoration: none; color:#FFF }
+a:hover { text-decoration: underline overline; color:#FFF }
+
+.middle {
+	float:center;
+}
+
+select {
+	align: center;
+}
